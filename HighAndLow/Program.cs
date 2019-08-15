@@ -14,16 +14,12 @@ namespace HighAndLow
         static void Main(string[] args)
         {
 
-            Card myCard = new Card();
-            Card aCard = new Card(13, 1);
-
+            Card aCard = new Card();
             Console.WriteLine("aCard : {0} of {1}", aCard.value, aCard.suitString());
-            for (int i = 0; i < 5; i++)
-            {
-                myCard = new Card();
-                Console.WriteLine("myCard : {0} of {1}", myCard.value, myCard.suitString());
-                Console.ReadLine();
-            }
+        
+            Card myCard = new Card(11, 2);
+            Console.WriteLine("myCard : {0} of {1}", myCard.value, myCard.suitString());
+            
         }
     }
 }
