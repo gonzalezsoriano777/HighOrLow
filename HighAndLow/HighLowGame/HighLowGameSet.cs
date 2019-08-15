@@ -8,27 +8,23 @@ namespace HighAndLow.HighLowGame
 {
     public class HighLowGameSet : Card
     {
-
         public int correctPick = 0;
 
         public void GameProcess()
         {
 
-           // Console.WriteLine("This is a test..");
-
-            var firstCard = new Card();
+            var firstCard = new Card(13, 1);
             var secondCard = new Card();
 
-            if(firstCard.value == secondCard.value && firstCard.suit == secondCard.suit)
+            if(firstCard.value == secondCard.value && firstCard.suitString() == secondCard.suitString())
             {
-                var anotherCard = new Card(); 
+                secondCard = new Card(); 
             }
             else
             {
                 Console.WriteLine("Here's your first card.");
-                Console.WriteLine("{0} {1}", firstCard.value, firstCard.suit);
+                Console.WriteLine("{0} {1}", firstCard.value, firstCard.suitString());
                 Console.WriteLine("Now let's play high or low...");
-
                 string inputGuess = Console.ReadLine();
 
                 if (inputGuess.ToLower() != "high" || inputGuess.ToLower() != "low")
@@ -50,10 +46,7 @@ namespace HighAndLow.HighLowGame
                     Console.WriteLine("Goodbye, better luck next time");
                     correctPick = 0;
                 }
-
-
             }
-
         }
     }
 }
