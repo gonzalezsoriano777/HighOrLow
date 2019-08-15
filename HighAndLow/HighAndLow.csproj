@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="HighLowGame\GuessingFactor.cs" />
     <Compile Include="HighLowGame\Card.cs" />
+    <Compile Include="HighLowGame\HighLowGameSet.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
