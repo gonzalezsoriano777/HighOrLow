@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HighAndLow.HighLowGame
 {
-    public class HighLowGameSet
+    public class HighLowGameSet : Card
     {
         public void GameProcess()
         {
