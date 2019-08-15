@@ -13,7 +13,7 @@ namespace HighAndLow.HighLowGame
         public void GameProcess()
         {
 
-            var firstCard = new Card(13, 1);
+            var firstCard = new Card(2, 0);
             var secondCard = new Card();
 
             if(firstCard.value == secondCard.value && firstCard.suitString() == secondCard.suitString())
@@ -30,7 +30,7 @@ namespace HighAndLow.HighLowGame
 
                 if (inputGuess.ToLower() != "high" && inputGuess.ToLower() != "low")
                 {
-                    Console.WriteLine("ERROR: Please choose between high or low: ");
+                    Console.WriteLine("Please choose between high or low: ");
                 }
                 else if
                     (secondCard.value > firstCard.value && inputGuess.ToLower() == "high" || secondCard.value < firstCard.value && inputGuess.ToLower() == "low")
