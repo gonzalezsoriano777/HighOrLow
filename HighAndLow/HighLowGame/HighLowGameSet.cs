@@ -18,18 +18,19 @@ namespace HighAndLow.HighLowGame
 
             if(firstCard.value == secondCard.value && firstCard.suitString() == secondCard.suitString())
             {
-                secondCard = new Card(); 
+                secondCard = new Card();
             }
             else
             {
                 Console.WriteLine("Here's your first card.");
                 Console.WriteLine("{0} {1}", firstCard.value, firstCard.suitString());
                 Console.WriteLine("Now let's play high or low...");
+
                 string inputGuess = Console.ReadLine();
 
-                if (inputGuess.ToLower() != "high" || inputGuess.ToLower() != "low")
+                if (inputGuess.ToLower() != "high" && inputGuess.ToLower() != "low")
                 {
-                    Console.WriteLine("Please choose between high or low: ");
+                    Console.WriteLine("ERROR: Please choose between high or low: ");
                 }
                 else if
                     (secondCard.value > firstCard.value && inputGuess.ToLower() == "high" || secondCard.value < firstCard.value && inputGuess.ToLower() == "low")
@@ -46,6 +47,7 @@ namespace HighAndLow.HighLowGame
                     Console.WriteLine("Goodbye, better luck next time");
                     correctPick = 0;
                 }
+                Console.WriteLine("got to end of system");
             }
         }
     }
