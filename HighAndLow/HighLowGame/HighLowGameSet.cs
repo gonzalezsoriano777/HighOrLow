@@ -47,7 +47,6 @@ namespace HighAndLow.HighLowGame
                     Console.WriteLine("Goodbye, better luck next time");
                     correctPick = 0;
                 }
-                Console.WriteLine("got to end of system");
             }
         }
     }
