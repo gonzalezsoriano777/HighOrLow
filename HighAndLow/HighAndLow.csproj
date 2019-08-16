@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BestHand\Deck.cs" />
     <Compile Include="HighLowGame\GuessingFactor.cs" />
     <Compile Include="HighLowGame\Card.cs" />
     <Compile Include="HighLowGame\HighLowGameSet.cs" />
