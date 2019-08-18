@@ -12,7 +12,6 @@ namespace HighAndLow.HighLowGame
 
         public void GameProcess()
         {
-
             var firstCard = new Card(2, 0);
             var secondCard = new Card();
 
