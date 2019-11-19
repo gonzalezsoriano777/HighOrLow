@@ -8,5 +8,6 @@ namespace HighAndLow.UpdatedHighLowGame
 {
     class GameProcess
     {
+        public 
     }
 }

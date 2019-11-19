@@ -19,8 +19,11 @@ namespace HighAndLow
             //   Deck gameDeck = new Deck();
             //   gameDeck.PickDeck();
 
-            CardStorage cardPicker = new CardStorage();
-            cardPicker.SimpleHighAndLow();
+            // CardStorage cardPicker = new CardStorage();
+            // cardPicker.SimpleHighAndLow();
+
+            GameProcess cardGame = new GameProcess();
+            
 
         }
     }

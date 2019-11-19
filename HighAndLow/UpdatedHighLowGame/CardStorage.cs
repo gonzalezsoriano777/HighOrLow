@@ -8,34 +8,9 @@ namespace HighAndLow.UpdatedHighLowGame
 {
    public class CardStorage
    {
-        public void SimpleHighAndLow()
+        public void Storage()
         {
-            Random randomCard = new Random();
-            Console.WriteLine("Based of this card, will next card be high or low?");
 
-            var firstCard = randomCard.Next(1, 14);
-            Console.WriteLine(firstCard);
-
-            int secondCard = randomCard.Next(1, 14);
-            string input = Console.ReadLine();
-            Console.WriteLine(secondCard);
-
-            if (secondCard > firstCard && input.ToLower() == "high" || secondCard < firstCard && input.ToLower() == "low")
-            {
-                Console.WriteLine("Good choice!");
-            }
-
-            else if (secondCard < firstCard && input.ToLower() == "high" || secondCard > firstCard && input.ToLower() == "low")
-            {
-                Console.WriteLine("Incorrect pick, good try!");
-            }
-
-            else
-            {
-                Console.WriteLine("Seems like it ended as a draw.");
-            }
-              
         }
-
     }
 }
