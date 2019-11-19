@@ -8,12 +8,6 @@ namespace HighAndLow.UpdatedHighLowGame
 {
    public class CardStorage
    {
-        public void Storage()
-        {
-            string[] cardSuits =
-            {
-                "Diamonds", "Hearts", "Spades", "Clubs"
-            };
-        }
+        enum cardSuits { Diamond = 0, Hearts = 1, Spades = 2, Clubs = 3 }
     }
 }

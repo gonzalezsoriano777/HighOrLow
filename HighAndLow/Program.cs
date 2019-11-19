@@ -15,7 +15,8 @@ namespace HighAndLow
         static void Main(string[] args)
         {
             GameProcess cardGame = new GameProcess();
-            cardGame.HighLowCardGame();
+            //cardGame.HighLowCardGame();
+            
         }
     }
 }

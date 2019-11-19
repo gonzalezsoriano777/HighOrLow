@@ -8,6 +8,15 @@ namespace HighAndLow.UpdatedHighLowGame
 {
     class GameProcess : CardStorage
     {
+        public int firstCard;
+        public int secondCard;
+
+        public void GrabbingTwoCards()
+        {
+            Random randomCard = new Random(); 
+
+        }
+
         public void HighLowCardGame()
         {
 
