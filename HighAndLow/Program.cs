@@ -14,17 +14,8 @@ namespace HighAndLow
     {
         static void Main(string[] args)
         {
-            // HighLowGameSet cardGame = new HighLowGameSet();
-            // cardGame.GameProcess();
-            //   Deck gameDeck = new Deck();
-            //   gameDeck.PickDeck();
-
-            // CardStorage cardPicker = new CardStorage();
-            // cardPicker.SimpleHighAndLow();
-
             GameProcess cardGame = new GameProcess();
-            
-
+            cardGame.HighLowCardGame();
         }
     }
 }

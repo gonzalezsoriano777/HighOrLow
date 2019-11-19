@@ -10,7 +10,10 @@ namespace HighAndLow.UpdatedHighLowGame
    {
         public void Storage()
         {
-
+            string[] cardSuits =
+            {
+                "Diamonds", "Hearts", "Spades", "Clubs"
+            };
         }
     }
 }

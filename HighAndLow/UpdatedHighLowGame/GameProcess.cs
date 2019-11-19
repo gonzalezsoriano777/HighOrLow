@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace HighAndLow.UpdatedHighLowGame
 {
-    class GameProcess
+    class GameProcess : CardStorage
     {
-        public 
+        public void HighLowCardGame()
+        {
+
+        }
     }
 }

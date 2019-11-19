@@ -11,12 +11,14 @@ namespace HighAndLow.UpdatedHighLowGame
         public void SimpleHighAndLow()
         {
             Random randomCard = new Random();
-            Console.WriteLine("Based of this card, will next card be high or low?");
+            Console.WriteLine("Based of this card, will the next card be high or low?");
 
             var firstCard = randomCard.Next(1, 14);
             Console.WriteLine(firstCard);
 
+            // static number
             int secondCard = 7;
+
             string input = Console.ReadLine();
             Console.WriteLine(secondCard);
 
