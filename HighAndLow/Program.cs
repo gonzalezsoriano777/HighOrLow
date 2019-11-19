@@ -14,8 +14,11 @@ namespace HighAndLow
     {
         static void Main(string[] args)
         {
-            GameProcess cardGame = new GameProcess();
-            //cardGame.HighLowCardGame();
+            // GameProcess cardGame = new GameProcess();
+            //cardGame.CollectingCards();
+
+            CardStorage cardSimulator = new CardStorage();
+            cardSimulator.suitRandomizer();
             
         }
     }
