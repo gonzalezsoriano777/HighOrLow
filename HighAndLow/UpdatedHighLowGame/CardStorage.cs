@@ -28,12 +28,13 @@ namespace HighAndLow.UpdatedHighLowGame
             else if (secondCard < firstCard && input.ToLower() == "high" || secondCard > firstCard && input.ToLower() == "low")
             {
                 Console.WriteLine("Incorrect pick, good try!");
-            } else
+            }
+
+            else
             {
                 Console.WriteLine("Seems like it ended as a draw.");
             }
-                       
-
+              
         }
 
     }
