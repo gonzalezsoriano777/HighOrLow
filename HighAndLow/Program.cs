@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using HighAndLow.HighLowGame;
 using HighAndLow.BestHand;
+using HighAndLow.UpdatedHighLowGame;
 
 namespace HighAndLow
 {
@@ -13,13 +14,14 @@ namespace HighAndLow
     {
         static void Main(string[] args)
         {
+            // HighLowGameSet cardGame = new HighLowGameSet();
+            // cardGame.GameProcess();
+            //   Deck gameDeck = new Deck();
+            //   gameDeck.PickDeck();
 
-            HighLowGameSet cardGame = new HighLowGameSet();
-            cardGame.GameProcess();
+            CardStorage cardPicker = new CardStorage();
+            cardPicker.SimpleHighAndLow();
 
-
-         //   Deck gameDeck = new Deck();
-         //   gameDeck.PickDeck();
         }
     }
 }
