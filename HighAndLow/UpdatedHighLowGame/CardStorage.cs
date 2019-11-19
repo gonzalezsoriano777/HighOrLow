@@ -16,17 +16,23 @@ namespace HighAndLow.UpdatedHighLowGame
             var firstCard = randomCard.Next(1, 14);
             Console.WriteLine(firstCard);
 
-            var secondCard = randomCard.Next(1, 14);
+            int secondCard = randomCard.Next(1, 14);
             string input = Console.ReadLine();
             Console.WriteLine(secondCard);
 
             if (secondCard > firstCard && input.ToLower() == "high" || secondCard < firstCard && input.ToLower() == "low")
             {
                 Console.WriteLine("Good choice!");
+            }
+
+            else if (secondCard < firstCard && input.ToLower() == "high" || secondCard > firstCard && input.ToLower() == "low")
+            {
+                Console.WriteLine("Incorrect pick, good try!");
             } else
             {
-                Console.WriteLine("Incorrect, good try!");
+                Console.WriteLine("Seems like it ended as a draw.");
             }
+                       
 
         }
 
